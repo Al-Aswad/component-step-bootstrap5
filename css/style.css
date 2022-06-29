@@ -3,6 +3,13 @@
   --prm-gray: #b1b1b1;
 }
 
+.container_items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* CSS */
 .steps {
   display: flex;
@@ -43,8 +50,16 @@
 
 .container_progress {
   position: absolute;
+  top: 0;
+  left: 14px;
+  margin-top: 1rem;
   width: 100%;
-  padding: 0 45px;
+  padding: 0 1rem;
+}
+@media (min-width: 564px) {
+  .container_progress {
+    padding: 0 2rem;
+  }
 }
 
 .progress {
@@ -52,7 +67,7 @@
   width: 100%;
   z-index: 5;
   height: 5px;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .progress::-webkit-progress-bar {
