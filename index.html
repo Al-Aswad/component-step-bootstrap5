@@ -10,7 +10,6 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- Stepper Styles -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Demo CSS -->
 
 </head>
 
@@ -20,7 +19,9 @@
         <!-- Start Stepper HTML -->
         <div class="container mt-5">
             <div class="steps">
-                <progress id="progress" value=0 max=100></progress>
+                <div class="container_progress">
+                    <progress class="progress" value=0 max=100></progress>
+                </div>
                 <div class="step-item">
                     <button class="step-button text-center" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
